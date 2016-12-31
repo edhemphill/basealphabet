@@ -32,6 +32,8 @@ assert(alpha32.toDecimal("醁") == 30);
 assert(alpha32.toDecimal("11") == (32+1));
 assert(alpha32.toDecimal("醁1") == ((32*30)+1));
 
+console.log("Random base32 num with eight digits:",alpha32.randomNumber(8));
+
 ```
 
 Enjoy.
