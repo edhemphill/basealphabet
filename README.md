@@ -4,7 +4,7 @@ represent a number with any base using any alphabet (JS)
 Use it like this:
 
 ```
-var BaseAlphabet = require('./index.js').BaseAlphabet;
+var BaseAlphabet = require('basealphabet').BaseAlphabet;
 
 var alpha32 = new BaseAlphabet({
 	alphabet: '0123456789ABCDEFGHJKMNPQRTUVWXY$',   // provide an alphabet for your number system
