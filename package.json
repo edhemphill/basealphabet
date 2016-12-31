@@ -1,0 +1,25 @@
+{
+  "name": "basealphabet",
+  "version": "1.0.2",
+  "description": "converts number to arbitrary alphabets and back",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edhemphill/basealphabet.git"
+  },
+  "keywords": [
+    "basen",
+    "hex",
+    "base32",
+    "numbers"
+  ],
+  "author": "Ed Hemphill <npm@wigwag.com> (http://www.wigwag.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edhemphill/basealphabet/issues"
+  },
+  "homepage": "https://github.com/edhemphill/basealphabet#readme"
+}
