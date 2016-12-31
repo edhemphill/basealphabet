@@ -37,18 +37,24 @@ assert(alpha32.toDecimal("醁") == 30);
 assert(alpha32.toDecimal("11") == (32+1));
 assert(alpha32.toDecimal("醁1") == ((32*30)+1));
 
-console.log('tests',tests);
-console.log('should have failed',failed);
-assert(tests == 10)
-assert(failed == 1)
-console.log("if no visisble exceptions throw we are good.")
 
 var alphaStrange = new BaseAlphabet({
 	alphabet: 'QLJK',
 	radix: 4
 });
 
-
 assert(alphaStrange.toDecimal("Q") == 0);
 assert(alphaStrange.toAlphabet(4) == 'LQ');
+assert(alphaStrange.toAlphabet(0) == 'Q');
+
+var s1=alpha32.randomNumber(1)
+var s2=alpha32.randomNumber(8)
+assert(s1.length == 1);
+assert(s2.length == 8);
+
+console.log('tests',tests);
+console.log('should have failed',failed);
+assert(tests == 15)
+assert(failed == 1)
+console.log("if no visisble exceptions throw we are good.")
 

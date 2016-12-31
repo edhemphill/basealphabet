@@ -31,7 +31,7 @@ var DecimalToArbitrarySystem = function(decimalNumber, radix, table)
          throw new Error("The radix must be >= 2 and <= " + Digits.Length.ToString());
 
     if (decimalNumber == 0)
-        return "0";
+        return table[0];
 
     var index = BitsInLong - 1;
     var currentNumber = decimalNumber; //Math.Abs(decimalNumber);
@@ -186,6 +186,11 @@ baseAlphabet.prototype.toAlphabet = function(decnum) {
     }
 }
 
+baseAlphabet.prototype.randomNumber = function(digits) {
+    var max = Math.pow(this.radix,digits);
+    var num = Math.random() * max;
+    return this.toAlphabet(Math.round(num));
+}
 
 module.exports = {
     toBase32: toBase32,
