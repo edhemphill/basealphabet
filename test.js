@@ -43,3 +43,12 @@ assert(tests == 10)
 assert(failed == 1)
 console.log("if no visisble exceptions throw we are good.")
 
+var alphaStrange = new BaseAlphabet({
+	alphabet: 'QLJK',
+	radix: 4
+});
+
+
+assert(alphaStrange.toDecimal("Q") == 0);
+assert(alphaStrange.toAlphabet(4) == 'LQ');
+
